@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>scrollOnButton</title>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" href="./scrollOnButton.css"/>
+	<script src="scrollOnButton.js"></script>
+
+</head>
+<body>
+	<div class="Wrapper">
+		<div class="Button-Down">
+			Кнопка вниз
+		</div>
+		<div class="Button-Up">
+			Кнопка вверх
+		</div>
+	</div>
+
+	<script>
+		$('.Button-Down').scrollOnButton();
+		$('.Button-Up').scrollOnButton({animate:'AnimateUp', duration:2000});
+	</script>
+</body>
+</html>
