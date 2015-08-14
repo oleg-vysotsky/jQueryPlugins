@@ -1,0 +1,68 @@
+.Data-Form-Popup
+{
+    display:    block;
+    text-align: center;
+    margin-top: 0;
+
+    position:   fixed;
+    top:        0;
+    left:       0;
+    bottom:     0;
+    right:      0;
+    z-index:    10000000000;
+
+    background: rgba(0, 0, 0, 0.8);
+
+    .Data-Form-Popup-Content
+    {
+        width:       100%;
+
+        position:    fixed;
+        top:         45%;
+
+        font-family: monospace;
+        font-size:   24px;
+        line-height: 36px;
+        font-weight: 300;
+        color:       #fff;
+
+        .Data-Form-Popup-Success
+        {
+            font-family: monospace;
+            font-size:   24px;
+            line-height: 36px;
+            font-weight: 300;
+            color:       #fff;
+
+        }
+        .Data-Form-Popup-Error
+        {
+            font-family: monospace;
+            font-size:   24px;
+            line-height: 36px;
+            font-weight: 300;
+            color:       red;
+
+        }
+
+    }
+
+    .Data-Form-Popup-Close
+    {
+        position:    absolute;
+        top:         20px;
+        right:       20px;
+
+        cursor:      pointer;
+        color:       #fff;
+        font-size:   40px;
+        font-family: arial, helvetica, sans serif;
+        font-weight: 300;
+        line-height: 40px;
+
+        &:hover
+        {
+            color: #ffe928;
+        }
+    }
+}
