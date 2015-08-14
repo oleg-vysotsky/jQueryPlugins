@@ -1,0 +1,12 @@
+.Input-Wrapper
+{
+	position: relative;
+	overflow: hidden;
+}
+
+.Label-Placeholder
+{
+	position: absolute;
+	left:     3px;
+	top:      3px;
+}
