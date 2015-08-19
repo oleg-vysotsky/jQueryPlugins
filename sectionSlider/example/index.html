@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Section Slider</title>
+	<link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+
+<div class="Section-Slider">
+
+	<!-- Slides -->
+	<div class="Section-Slider-Items">
+		<div class="Section-Slider-Item Active">
+			<img src="img/1.jpg" alt=""/>
+		</div>
+		<div class="Section-Slider-Item">
+			<img src="img/2.jpg" alt=""/>
+		</div>
+		<div class="Section-Slider-Item">
+			<img src="img/3.jpg" alt=""/>
+		</div>
+		<div class="Section-Slider-Item">
+			<img src="img/4.jpg" alt=""/>
+		</div>
+	</div>
+
+	<!-- Navigation -->
+	<div class="Section-Slider-Navigation">
+		<div class="Section-Slider-Previous"></div>
+		<div class="Section-Slider-Next"></div>
+	</div>
+
+	<!-- Buttons -->
+	<div class="Section-Slider-Buttons">
+		<div class="Section-Slider-Button Active"></div>
+		<div class="Section-Slider-Button"></div>
+		<div class="Section-Slider-Button"></div>
+		<div class="Section-Slider-Button"></div>
+	</div>
+
+</div>
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="../../_libs/jquery.actual.min.js"></script>
+<script src="../jquery.sectionSlider.js"></script>
+
+<script>
+	$('.Section-Slider').sectionSlider();
+</script>
+</body>
+</html>
