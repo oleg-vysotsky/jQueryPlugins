@@ -1,0 +1,23 @@
+.Wrapper{
+	position: relative;
+	height: 2000px;
+}
+
+.Button-Down{
+	width: 150px;
+	height: 50px;
+	background: black;
+	font-size: 16px;
+	color: #fff;
+}
+
+
+.Button-Up{
+	position: absolute;
+	bottom: 0px;
+	width: 150px;
+	height: 50px;
+	background: black;
+	font-size: 16px;
+	color: #fff;
+}
