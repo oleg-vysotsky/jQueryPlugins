@@ -2,22 +2,22 @@
 	$.fn.sectionSlider = function (User_Settings) {
 
 		// Set Settings
-		var Input = this;
+		var Slider = this;
 		var Default_Settings = {
 			'Height':   'window', // window, auto
-			'Effect':   'fade', // none, fade, slide, vertical_slide,corner_slide
+			'Effect':   'fade', // none, fade, slide, vertical_slide, corner_slide
 			'Duration': 444
 		};
 		var Settings = $.extend(Default_Settings, User_Settings);
 
 		// Set Height
 		function SetSectionHeight() {
-			$(Input).css('height', $('.Section-Slider-Item.Active', Input).actual('outerHeight') + 'px');
+			$(Slider).css('height', $('.Section-Slider-Item.Active', Slider).actual('outerHeight') + 'px');
 		}
 
 		// Set Window
 		function SetWindowHeight() {
-			$(Input).css('height', $(window).height() + 'px');
+			$(Slider).css('height', $(window).height() + 'px');
 		}
 
 		if (Settings.Height == 'auto') {
@@ -33,16 +33,16 @@
 		}
 
 		// Activate
-		$('.Section-Slider-Item', Input).css('display', 'none');
-		$('.Section-Slider-Item.Active', Input).css('display', 'block');
+		$('.Section-Slider-Item', Slider).css('display', 'none');
+		$('.Section-Slider-Item.Active', Slider).css('display', 'block');
 
 		// Change Slide
-		var Count_Slides = $('.Section-Slider-Item', Input).length;
+		var Count_Slides = $('.Section-Slider-Item', Slider).length;
 
 
 		// Next Slide
-		$('.Section-Slider-Next', Input).click(function () {
-			var Current_Slide = $('.Section-Slider-Item.Active', Input).index();
+		$('.Section-Slider-Next', Slider).click(function () {
+			var Current_Slide = $('.Section-Slider-Item.Active', Slider).index();
 			if (Current_Slide < Count_Slides - 1) {
 				Current_Slide++;
 			} else {
@@ -53,8 +53,8 @@
 
 
 		// Prev Slide
-		$('.Section-Slider-Previous', Input).click(function () {
-			var Current_Slide = $('.Section-Slider-Item.Active', Input).index();
+		$('.Section-Slider-Previous', Slider).click(function () {
+			var Current_Slide = $('.Section-Slider-Item.Active', Slider).index();
 			if (Current_Slide == 0) {
 				Current_Slide = Count_Slides - 1;
 			} else {
@@ -64,7 +64,7 @@
 		});
 
 		// Button Slide
-		$('.Section-Slider-Button', Input).click(function () {
+		$('.Section-Slider-Button', Slider).click(function () {
 			var Current_Slide = $(this).index();
 			Slide_Effect(Current_Slide);
 		});
@@ -72,8 +72,8 @@
 
 		// Slide Effect
 		function Slide_Effect(Current_Slide, Direction) {
-			var Items = $('.Section-Slider-Item', Input);
-			var Buttons = $('.Section-Slider-Button', Input);
+			var Items = $('.Section-Slider-Item', Slider);
+			var Buttons = $('.Section-Slider-Button', Slider);
 
 			// Change Active
 			$(Buttons.removeClass('Active')[Current_Slide]).addClass('Active');
