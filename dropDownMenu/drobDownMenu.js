@@ -6,9 +6,6 @@
 
 
 		var Default_Settings = {                      /* Настройки по-умолчанию */
-			"1":'a',
-			"2":'b',
-			"3":'c',
 			menu_block:'<div class="Menu"></div>',
 			height_menu:4,
 			border_width:1,
