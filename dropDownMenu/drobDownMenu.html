@@ -3,11 +3,12 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="drobDownMenu.css"/>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="drobDownMenu.js"></script>
 </head>
 <body>
-<link rel="stylesheet" href="./dropDownMenu/drobDownMenu.css"/>
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="./dropDownMenu/drobDownMenu.js"></script>
 
 
 <div class="Button">
@@ -17,6 +18,13 @@
 </div>
 
 
+<script>
+
+
+	$('.Button').drobDownMenu({items:['Главная', 'О компании', 'Информация','Каталог', 'Яблоки'],item:5} );
+
+
+</script>
 
 
 </body>
