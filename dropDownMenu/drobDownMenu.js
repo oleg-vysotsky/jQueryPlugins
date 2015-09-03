@@ -7,7 +7,8 @@
 
 		var Default_Settings = {                      /* Настройки по-умолчанию */
 			menu_block:'<div class="Menu"></div>',
-			height_menu:4                              /* Высотка выпадающего меню соответственно по количеству пунктов */
+			height_menu:4,							 /* Высотка выпадающего меню соответственно по количеству пунктов */
+			show_select:'no'						/* Показать результат - yes */
 
 
 		};
@@ -56,7 +57,17 @@
 
 		Button.find('.Menu li').click(function () {
 
-			Button.find('span, p, h').text($(this).text());
+			if(Settings.show_select == 'yes'){
+
+				Button.find('span, p, h').text($(this).text());
+				Button.find('.Menu li').removeClass('Active');
+				$(this).addClass('Active');
+
+			}else{
+				Button.find('.Menu li').removeClass('Active');
+				$(this).addClass('Active');
+			}
+
 
 
 		});
